@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="width: 100%; height: 100%; position: fixed; z-index: 10;">
+            <div style="width: 100%; height: 113px; left: 0px; top: 0px; position: fixed; background: #0D1B2A"></div>
+            <div style="width: 710px; height: 77px; left: 32px; top: 18px; position: fixed; color: #415A77; font-size: 64px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word"><a href="/">Outplanet</a></div>
+            <div style="width: 385px; height: 47px; left: 1200px; top: 9px; position: fixed; color: #415A77; font-size: 36px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word"></body><a href="about">About Exoplanets</a></div>
+            <div style="width: 115px; height: 47px; left: 996px; top: 32px; position: absolute; color: #415A77; font-size: 36px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word"><a href="/">Home</a></div>
+        </div>
+        <div style="color: #E0E1DD; font-size: 54px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word; position: relative; top: 189px; left: 32px">What are exoplanets?</div>
+        <div style="width: 100%; height: 100%; color: #E0E1DD; font-size: 20px; font-family: xenosphere; font-weight: 400; word-wrap: break-word; position: relative; top: 220px; left: 32px">An exoplanet can be described as any planet which is outside of our solar system. Most exoplanets<br> orbit other stars, but some, known as rogue planets, do not orbit any star.</div>
+        <div style="color: #E0E1DD; font-size: 20px; font-family: xenosphere; font-weight: 400; word-wrap: break-word; position: relative; top: 250px; left: 32px;">There are 4 main categories of exoplanets</div>
+        
+        <div style="width: 100%; height: 100%; position: relative; left: 21px; top: 300px">
+            <div style="width: 296px; height: 337px; left: 0px; top: 0px; position: absolute">
+                <div style="left: 25px; top: 0px; position: absolute; color: #E0E1DD; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word">Terrestrial</div>
+                <img style="width: 296px; height: 293px; left: 0px; top: 44px; position: absolute; border-radius: 146.50px" src="{{ url_for('static', filename='terrestrial.png') }}" />
+            </div>
+            <div style="width: 296px; height: 337px; left: 382px; top: 0px; position: absolute">
+                <img style="width: 296px; height: 293px; left: 0px; top: 44px; position: absolute; border-radius: 294.50px" src="{{ url_for('static', filename='superearth.jpg') }}" />
+                <div style="left: 19px; top: 0px; position: absolute; color: #E0E1DD; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word">Super earth</div>
+            </div>
+            <div style="width: 296px; height: 337px; left: 764px; top: 0px; position: absolute">
+                <img style="width: 296px; height: 293px; left: 0px; top: 44px; position: absolute; border-radius: 146.50px" src="{{ url_for('static', filename='neptunelike.png') }}" />
+                <div style="left: 20px; top: 0px; position: absolute; color: #E0E1DD; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word">Neptune like</div>
+            </div>
+            <div style="width: 296px; height: 337px; left: 1146px; top: 0px; position: absolute">
+                <img style="width: 296px; height: 293px; left: 0px; top: 44px; position: absolute; border-radius: 348px" src="{{ url_for('static', filename='gasgiant.png') }}" />
+                <div style="left: 52px; top: 0px; position: absolute; color: #E0E1DD; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word">Gas Giant</div>
+            </div>
+        </div>
+        <div style="width: 100%; height: 100%; position: relative; left: 15px; top: 700px">
+            <div style="width: 1346px; height: 370px; left: 2px; top: 0px; position: absolute; color: white; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word">Terrestrial is a type of exoplanet made of rock or metal, possibly with oceans and atmospheres.<br/><br/>Super-Earth exoplanets are also rocky, but are between the size of earth and neptune.<br/><br/>Neptune-like exoplanets are similar in size to earth and neptune and have a gaseous atmosphere.<br/><br/>Gas giants are as big as saturn or jupiter, or even larger!</div>
+            <div style="width: 1338px; left: 0px; top: 446px; position: absolute; color: white; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word">NASA finds and classifies exoplanets in a variety of ways.<br/><br/>One way is with the “transit method”. Using their Kepler Space telescope, NASA can catch tiny dips of light coming from individual stars. These indicate planets are crossing infront of the stars, and allow nasa to work out the planets orbital size by measuring how long each planet stays infront of the star and the mass of the star.<br/><br/>Another useful method scientists use is called “Direct imaging”. This captures pixels of light from exoplanets that can give us profiles of their atmospheres and possibly gases suggesting the presence of life. So far however, this direct imaging has mainly been caught from hot giant planets that are still self luminous.</div>
+        </div>
+    </body>
+</html> 

@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<head>
-    <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
-</head>
-<body>
-    <div style="width: 100%; height: 100%; position: relative">
-        <div style="width: 100%; height: 113px; left: 0px; top: 0px; position: absolute; background: #0D1B2A"></div>
-        <div style="width: 710px; height: 77px; left: 32px; top: 18px; position: absolute; color: #415A77; font-size: 64px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word"><a href="/">Outplanet</a></div>
-        <div style="width: 360px; height: 40px; left: 1150px; top: 18px; position: absolute; color: #415A77; font-size: 36px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word"></body><a href="/about">About Exoplanets</a></div>
-    </div>
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="width: 100%; height: 100%; position: fixed">
+            <div style="width: 100%; height: 113px; left: 0px; top: 0px; position: fixed; background: #0D1B2A"></div>
+            <div style="width: 710px; height: 77px; left: 32px; top: 18px; position: fixed; color: #415A77; font-size: 64px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word"><a href="/">Outplanet</a></div>
+            <div style="width: 385px; height: 47px; left: 1200px; top: 9px; position: fixed; color: #415A77; font-size: 36px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word"></body><a href="about">About Exoplanets</a></div>
+            <div style="width: 115px; height: 47px; left: 996px; top: 32px; position: absolute; color: #415A77; font-size: 36px; font-family: Interstellar Trip; font-weight: 400; word-wrap: break-word"><a href="/">Home</a></div>
+        </div>
+        <div class="fadein">
+            <div style="color: #E0E1DD; font-size: 64px; font-family: Space Games; font-weight: 400; word-wrap: break-word">The beauty <br/>of exoplanets</div>
+        </div>
+        <div style="width: 100%; height: 100%; color: #E0E1DD; font-size: 16px; font-family: Space Games; font-weight: 400; word-wrap: break-word; position: relative; top: 180px; left: 15px">Explore a planet from each of the 4 categories of Exoplanets, or click “About” in the top right<br> to learn more about what exoplanets are</div>
+        <div style="width: 100%; height: 100%; position: relative; top: 220px; left: 15px">
+            <div style="width: 296px; height: 330px; left: 0px; top: 0px; position: absolute">
+                <div style="left: 75px; top: 293px; position: absolute; color: #E0E1DD; font-size: 32px; font-family: xenosphere; font-weight: 400"><a href="/planet/1">Kepler<br> 1222 B</a></div>
+                <a href="/planet/1"><img style="width: 296px; height: 293px; left: 0px; top: 0px; position: absolute; border-radius: 146.50px" src="{{ url_for('static', filename='kepler.png') }}" /></a>
+            </div>
+            <div style="width: 296px; height: 330px; left: 382px; top: 0px; position: absolute">
+                <a href='/planet/2'><img style="width: 296px; height: 293px; left: 0px; top: 0px; position: absolute; border-radius: 294.50px" src="{{ url_for('static', filename='kepler2.png') }}" /></a>
+                <div style="left: 20px; top: 293px; position: absolute; color: #E0E1DD; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word"><a href="/planet/2">Kepler 22B</a></div>
+            </div>
+            <div style="width: 296px; height: 330px; left: 764px; top: 0px; position: absolute">
+                <a href='/planet/3'><img style="width: 296px; height: 293px; left: 0px; top: 0px; position: absolute; border-radius: 146.50px" src="{{ url_for('static', filename='kepler3.png') }}" /></a>
+                <div style="left: 15px; top: 293px; position: absolute; color: #E0E1DD; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word"><a href='/planet/3'>Kepler 228 D</a></div>
+            </div>
+            <div style="width: 296px; height: 330px; left: 1146px; top: 0px; position: absolute">
+                <a href='/planet/4'><img style="width: 296px; height: 293px; left: 0px; top: 0px; position: absolute; border-radius: 348px" src="{{ url_for('static', filename='') }}" /></a>
+                <div style="left: 52px; top: 293px; position: absolute; color: #E0E1DD; font-size: 32px; font-family: xenosphere; font-weight: 400; word-wrap: break-word"><a href='/planet/4'>Gas Giant</a></div>
+            </div>
+        </div>
+    </body>
+</html> 
