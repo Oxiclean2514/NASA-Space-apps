@@ -25,7 +25,7 @@ a {
     position: relative;
     top: 151px;
     left: 43px;
-    animation: fadeIn 4s;
+    animation: fadeIn 6s;
 }
 
 @keyframes fadeIn {
